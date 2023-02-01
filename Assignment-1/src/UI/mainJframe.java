@@ -4,6 +4,8 @@
  */
 package UI;
 
+import Model.Recipe;
+
 /**
  *
  * @author ashis
@@ -13,8 +15,20 @@ public class mainJframe extends javax.swing.JFrame {
     /**
      * Creates new form mainJframe
      */
+    private Recipe recipe;
+
     public mainJframe() {
         initComponents();
+
+        this.recipe = new Recipe();
+    }
+
+    mainJframe(Recipe rc) {
+
+        this.setVisible(true);
+        initComponents();
+
+        this.recipe = rc;
     }
 
     /**
@@ -28,19 +42,38 @@ public class mainJframe extends javax.swing.JFrame {
 
         jSplitPane1 = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
-        create = new javax.swing.JButton();
-        view = new javax.swing.JButton();
+        createButton = new javax.swing.JButton();
+        updateButton = new javax.swing.JButton();
+        readButton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
 
-        create.setBackground(new java.awt.Color(204, 204, 204));
-        create.setText("Create");
+        createButton.setBackground(new java.awt.Color(204, 204, 204));
+        createButton.setText("Create");
+        createButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createButtonActionPerformed(evt);
+            }
+        });
 
-        view.setBackground(new java.awt.Color(204, 204, 204));
-        view.setText("View");
+        updateButton.setBackground(new java.awt.Color(204, 204, 204));
+        updateButton.setText("Update");
+        updateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateButtonActionPerformed(evt);
+            }
+        });
+
+        readButton.setBackground(new java.awt.Color(204, 204, 204));
+        readButton.setText("Read");
+        readButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                readButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -48,19 +81,22 @@ public class mainJframe extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(view)
-                    .addComponent(create))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(updateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(createButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(readButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(106, 106, 106)
-                .addComponent(create)
-                .addGap(56, 56, 56)
-                .addComponent(view)
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addComponent(createButton)
+                .addGap(34, 34, 34)
+                .addComponent(updateButton)
+                .addGap(33, 33, 33)
+                .addComponent(readButton)
+                .addContainerGap(90, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(jPanel1);
@@ -84,6 +120,25 @@ public class mainJframe extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
+        // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new createJpanel(this.recipe));
+
+    }//GEN-LAST:event_createButtonActionPerformed
+
+    private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
+        // TODO add your handling code here:
+        System.out.println("UI.MainJFrame.btnUpdateActionPerformed()");
+        jSplitPane1.setRightComponent(new editJPanel(this.recipe));
+
+    }//GEN-LAST:event_updateButtonActionPerformed
+
+    private void readButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readButtonActionPerformed
+        // TODO add your handling code here:
+        jSplitPane1.setRightComponent(new viewJPanel(this.recipe));
+
+    }//GEN-LAST:event_readButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,10 +176,11 @@ public class mainJframe extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton create;
+    private javax.swing.JButton createButton;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JButton view;
+    private javax.swing.JButton readButton;
+    private javax.swing.JButton updateButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,6 +16,12 @@ public class Person {
     long phone;
     String email;
 
+    public Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.username = "";
+    }
+
     public long getPhone() {
         return phone;
     }
@@ -30,12 +36,6 @@ public class Person {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Person() {
-        this.firstName = "";
-        this.lastName = "";
-        this.username = "";
     }
 
     public String getFirstName() {

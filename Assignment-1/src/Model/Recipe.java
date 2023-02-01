@@ -18,7 +18,20 @@ public class Recipe {
     String foodCategory;
     String description;
     String picture;
+    Person person;
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+    
+    public Recipe(){
+        
+    }
+    
     public String getTitle() {
         return title;
     }
