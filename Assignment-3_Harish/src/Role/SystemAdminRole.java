@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class SystemAdminRole extends Role {
 

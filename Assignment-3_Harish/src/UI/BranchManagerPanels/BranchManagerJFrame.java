@@ -7,16 +7,16 @@ package UI.BranchManagerPanels;
 
 import Business.Branch;
 import Business.Business;
-import Libraray.Book;
-import Libraray.CustomerRequest;
-import Libraray.Magazine;
+import Library.Book;
+import Library.CustomerRequest;
+import Library.Magazine;
 import UI.MainJFrame;
 import UserAccount.UserAccount;
 import java.util.ArrayList;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class BranchManagerJFrame extends javax.swing.JFrame {
 
@@ -214,12 +214,16 @@ public class BranchManagerJFrame extends javax.swing.JFrame {
         logout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 204));
 
+        jTabbedPane4.setBackground(new java.awt.Color(255, 255, 204));
         jTabbedPane4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTabbedPane4FocusGained(evt);
             }
         });
+
+        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 204));
 
         bookTable.setModel(getBooksModel());
         bookTable.setColumnSelectionAllowed(true);
@@ -249,6 +253,8 @@ public class BranchManagerJFrame extends javax.swing.JFrame {
         jTabbedPane1.addTab("Magazine", jPanel7);
 
         jTabbedPane4.addTab("Material", jTabbedPane1);
+
+        jPanel8.setBackground(new java.awt.Color(255, 255, 204));
 
         rentalReqTable.setModel(getRentalReqTableModel());
         rentalReqTable.setColumnSelectionAllowed(true);

@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class MainJFrame extends javax.swing.JFrame {
 
@@ -60,6 +60,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -68,6 +69,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 250, 39));
+
+        jLayeredPane1.setForeground(new java.awt.Color(204, 204, 204));
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,11 +82,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("User Name");
         jLayeredPane1.add(jLabel1);
-        jLabel1.setBounds(120, 210, 87, 25);
+        jLabel1.setBounds(120, 210, 65, 17);
 
         jLabel2.setText("Password");
         jLayeredPane1.add(jLabel2);
-        jLabel2.setBounds(120, 290, 76, 25);
+        jLabel2.setBounds(120, 290, 58, 17);
 
         jLayeredPane1.add(comboBoxRole);
         comboBoxRole.setBounds(340, 350, 100, 30);
@@ -100,7 +103,7 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         jLayeredPane1.add(loginBtn);
-        loginBtn.setBounds(290, 440, 108, 35);
+        loginBtn.setBounds(290, 440, 72, 23);
 
         jPanel1.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 610));
 

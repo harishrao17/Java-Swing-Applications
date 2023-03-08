@@ -3,23 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Business/Library.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Libraray/Authour.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Role/LibrarianRole.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Role/Role.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Libraray/Magazine.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Role/SystemAdminRole.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UI/MainJFrame.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UserAccount/Employe.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UserAccount/UserAccount.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UI/CustomerPanels/CustomerJFrame.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Role/CustomerRole.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Role/BranchAdminRole.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Libraray/Material.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UI/LibraryManagerPanel/LibraryManagerJFrame.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UI/SystemAdminPanels/SystemAdminJFrame.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/UserAccount/EmployeAccountDirectory.java</file>
-            <file>file:/C:/Users/Antony/Downloads/LibraryManagementApp/src/Libraray/Genere.java</file>
+            <file>file:/Users/harish/Desktop/Northeastern/002704549_HarishRao_Takkallapally/Assignment-3_Harish/src/UI/CustomerPanels/CustomerJFrame.java</file>
+            <file>file:/Users/harish/Desktop/Northeastern/002704549_HarishRao_Takkallapally/Assignment-3_Harish/src/UI/SystemAdminPanels/SystemAdminJFrame.java</file>
+            <file>file:/Users/harish/Desktop/Northeastern/002704549_HarishRao_Takkallapally/Assignment-3_Harish/src/UI/MainJFrame.java</file>
+            <file>file:/Users/harish/Desktop/Northeastern/002704549_HarishRao_Takkallapally/Assignment-3_Harish/src/UI/BranchManagerPanels/BranchManagerJFrame.java</file>
+            <file>file:/Users/harish/Desktop/Northeastern/002704549_HarishRao_Takkallapally/Assignment-3_Harish/src/UI/LibraryManagerPanel/LibraryManagerJFrame.java</file>
         </group>
     </open-files>
 </project-private>

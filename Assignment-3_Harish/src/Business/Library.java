@@ -4,17 +4,17 @@
  */
 package Business;
 
-import Libraray.Authour;
-import Libraray.Book;
-import Libraray.CustomerRequest;
-import Libraray.Genere;
-import Libraray.Magazine;
-import Libraray.Material;
+import Library.Authour;
+import Library.Book;
+import Library.CustomerRequest;
+import Library.Genre;
+import Library.Magazine;
+import Library.Material;
 import java.util.ArrayList;
 
 /**
  *
- * @author Antony
+ * @author harish
  */
 public class Library {
 
@@ -22,7 +22,7 @@ public class Library {
 
     private ArrayList<Book> books = new ArrayList<>();
     private ArrayList<Magazine> magazines = new ArrayList<>();
-    private ArrayList<Genere> generes = new ArrayList<>();
+    private ArrayList<Genre> generes = new ArrayList<>();
     private ArrayList<Authour> authours = new ArrayList<>();
 
     public ArrayList<CustomerRequest> getCustomerRequests() {
@@ -89,8 +89,8 @@ public class Library {
         return null;
     }
 
-    public Genere getGenere(String id) {
-        for (Genere m : generes) {
+    public Genre getGenere(String id) {
+        for (Genre m : generes) {
             if (m.getId().equals(id)) {
                 return m;
             }
@@ -124,7 +124,7 @@ public class Library {
         books.add(b);
     }
 
-    public void addGenere(Genere g) {
+    public void addGenere(Genre g) {
         generes.add(g);
     }
 
@@ -148,11 +148,11 @@ public class Library {
         this.magazines = magazines;
     }
 
-    public ArrayList<Genere> getGeneres() {
+    public ArrayList<Genre> getGeneres() {
         return generes;
     }
 
-    public void setGeneres(ArrayList<Genere> generes) {
+    public void setGeneres(ArrayList<Genre> generes) {
         this.generes = generes;
     }
 

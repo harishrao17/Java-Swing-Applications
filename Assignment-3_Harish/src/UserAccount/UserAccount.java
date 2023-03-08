@@ -9,7 +9,7 @@ import Role.Role;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class UserAccount {
     private String accountId;

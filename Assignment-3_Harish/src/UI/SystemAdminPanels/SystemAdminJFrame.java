@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class SystemAdminJFrame extends javax.swing.JFrame {
 
@@ -267,11 +267,14 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.OverlayLayout(getContentPane()));
 
+        jTabbedPane4.setBackground(new java.awt.Color(255, 255, 204));
         jTabbedPane4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTabbedPane4FocusGained(evt);
             }
         });
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setText("Branch Name");
         jPanel1.add(jLabel1);

@@ -7,11 +7,11 @@ package UI.CustomerPanels;
 
 import Business.Branch;
 import Business.Business;
-import Libraray.Authour;
-import Libraray.Book;
-import Libraray.CustomerRequest;
-import Libraray.Magazine;
-import Libraray.Material;
+import Library.Authour;
+import Library.Book;
+import Library.CustomerRequest;
+import Library.Magazine;
+import Library.Material;
 import UI.MainJFrame;
 import UserAccount.UserAccount;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import javax.swing.table.TableColumnModel;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class CustomerJFrame extends javax.swing.JFrame {
 
@@ -286,11 +286,14 @@ public class CustomerJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jTabbedPane4.setBackground(new java.awt.Color(255, 255, 204));
         jTabbedPane4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTabbedPane4FocusGained(evt);
             }
         });
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setText("Rental Request");
         jPanel4.add(jLabel1);

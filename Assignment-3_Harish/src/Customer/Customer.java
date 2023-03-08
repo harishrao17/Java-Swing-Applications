@@ -5,13 +5,13 @@
  */
 package Customer;
 
-import Libraray.CustomerRequest;
+import Library.CustomerRequest;
 import Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class Customer extends UserAccount.UserAccount {
 

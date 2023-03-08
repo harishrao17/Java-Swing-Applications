@@ -8,18 +8,18 @@ package UI.LibraryManagerPanel;
 import UI.BranchManagerPanels.*;
 import Business.Branch;
 import Business.Business;
-import Libraray.Authour;
-import Libraray.Book;
-import Libraray.CustomerRequest;
-import Libraray.Genere;
-import Libraray.Magazine;
+import Library.Authour;
+import Library.Book;
+import Library.CustomerRequest;
+import Library.Genre;
+import Library.Magazine;
 import UI.MainJFrame;
 import UserAccount.UserAccount;
 import java.util.ArrayList;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class LibraryManagerJFrame extends javax.swing.JFrame {
 
@@ -48,7 +48,7 @@ public class LibraryManagerJFrame extends javax.swing.JFrame {
 
         if (this.branch != null) {
             int i = 0;
-            for (Genere data : this.branch.getLibrary().getGeneres()) {
+            for (Genre data : this.branch.getLibrary().getGeneres()) {
                 datas[i] = data.getId();
 
                 i++;
@@ -219,7 +219,7 @@ public class LibraryManagerJFrame extends javax.swing.JFrame {
         if (this.business != null) {
             Object[][] users = new Object[this.branch.getLibrary().getGeneres().size()][7];
             int i = 0;
-            for (Genere data : this.branch.getLibrary().getGeneres()) {
+            for (Genre data : this.branch.getLibrary().getGeneres()) {
                 users[i][0] = data.getId();
                 users[i][1] = data.getName();
                 i++;
@@ -361,6 +361,7 @@ public class LibraryManagerJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jTabbedPane4.setBackground(new java.awt.Color(255, 255, 204));
         jTabbedPane4.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTabbedPane4FocusGained(evt);
@@ -543,6 +544,8 @@ public class LibraryManagerJFrame extends javax.swing.JFrame {
         jTabbedPane1.addTab("Magazine", jPanel7);
 
         jTabbedPane4.addTab("Material", jTabbedPane1);
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 204));
 
         jPanel5.setMinimumSize(new java.awt.Dimension(559, 200));
 
@@ -770,7 +773,7 @@ public class LibraryManagerJFrame extends javax.swing.JFrame {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        branch.getLibrary().getGeneres().add(new Genere(generName.getText()));
+        branch.getLibrary().getGeneres().add(new Genre(generName.getText()));
         genereTable.setModel(getGenereTableModel());
         genereTable.repaint();
         genereSelection.setModel(getGenereModel());

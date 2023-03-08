@@ -5,10 +5,10 @@
  */
 package Business;
 
-import Libraray.Authour;
-import Libraray.Book;
-import Libraray.Genere;
-import Libraray.Magazine;
+import Library.Authour;
+import Library.Book;
+import Library.Genre;
+import Library.Magazine;
 import Role.BranchAdminRole;
 import Role.LibrarianRole;
 import Role.SystemAdminRole;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Nidhi Raghavendra
+ * @author harish
  */
 public class Business {
 
@@ -51,7 +51,7 @@ public class Business {
 
         Authour authour = new Authour("Arun", "India");
         branch.getLibrary().addAuthour(authour);
-        Genere genere = new Genere("Novel");
+        Genre genere = new Genre("Novel");
         branch.getLibrary().addGenere(genere);
         branch.getLibrary().addBook(new Book("English", "100", "Hardcover", genere, authour, "How to Learn Java", "12/12/2020", "11223JJI9", 10));
         branch.getLibrary().addMagazine(new Magazine("Times of India", "Weekly", "Fasion Week", "12/12/2022", "1001", 5));
