@@ -6,7 +6,7 @@ package Model;
 
 /**
  *
- * @author harish
+ * @author harishrao
  */
 public class Branch {
 
